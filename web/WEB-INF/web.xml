@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <!--    用户接口-->
+    <servlet>
+        <servlet-name>RegistServlet</servlet-name>
+        <servlet-class>web.admin.RegistServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistServlet</servlet-name>
+        <url-pattern>/admin/regist</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>web.admin.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/admin/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>IsLoginServlet</servlet-name>
+        <servlet-class>web.admin.IsLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IsLoginServlet</servlet-name>
+        <url-pattern>/admin/isLogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserInfoServlet</servlet-name>
+        <servlet-class>web.admin.UserInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserInfoServlet</servlet-name>
+        <url-pattern>/admin/info</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateInfoServlet</servlet-name>
+        <servlet-class>web.admin.UpdateInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateInfoServlet</servlet-name>
+        <url-pattern>/admin/updateInfo</url-pattern>
+    </servlet-mapping>
+
+<!--    <servlet>-->
+<!--        <servlet-name>ResetPasswordServlet</servlet-name>-->
+<!--        <servlet-class>web.admin.ResetPasswordServletdServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>ResetPasswordServlet</servlet-name>-->
+<!--        <url-pattern>/admin/resetPassword</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+    <servlet>
+        <servlet-name>DeleteTokenServlet</servlet-name>
+        <servlet-class>web.admin.DeleteTokenServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteTokenServlet</servlet-name>
+        <url-pattern>/admin/delete</url-pattern>
+    </servlet-mapping>
+
+</web-app>
